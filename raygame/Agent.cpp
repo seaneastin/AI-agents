@@ -8,11 +8,16 @@ void Agent::Update(float deltaTime)
 	//add the returned value to total force 
 	//add total force times delta time to velocity
 	//add velocity times delta time to position
+	//if velocity goes over max set it to max
 }
 
 void Agent::Draw()
 {
-	DrawRectangle(m_Position.x, m_Position.y, 10, 10, MAGENTA);
+	DrawRectangle(m_Position.x, m_Position.y, 50, 50, MAGENTA);
+}
+
+void Agent::AddBehavior(Behavior * behavior)
+{
 }
 
 
